@@ -1,1 +1,1 @@
-web: gunicorn a-django-todo-list.wsgi --log-file - --log-level debug
+web: python manage.py migrate && gunicorn config.wsgi
